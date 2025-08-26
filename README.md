@@ -50,7 +50,8 @@ CALCULATE( AVERAGE('Flights_Dataset'[Delay_Minutes]), 'Flights_Dataset'[Weather_
 
 Weather Impact On-Time Rate =
 DIVIDE(CALCULATE([Total Flights], 'Flights_Dataset'[Flight_Status] = "On-time", 'Flights_Dataset'[Weather_Impact_Label] = "Weather Impact"), [Weather Impact Flights])
-```
+
+
 
 6. **Visual design & layout**
 
@@ -76,7 +77,7 @@ DIVIDE(CALCULATE([Total Flights], 'Flights_Dataset'[Flight_Status] = "On-time", 
    * Documented all DAX, measures, and the Date table in `docs/metrics_dax.md`.
    * Created a data dictionary in `docs/data_dictionary.md` explaining all columns used.
 
----
+
 
 ## Key Findings (examples from analysis)
 
@@ -87,7 +88,6 @@ DIVIDE(CALCULATE([Total Flights], 'Flights_Dataset'[Flight_Status] = "On-time", 
 
 These insights can help operations and customer service teams plan staffing, optimize communications, and prioritize schedule buffers during high-risk periods.
 
----
 
 ## How to open and use
 
@@ -97,7 +97,6 @@ These insights can help operations and customer service teams plan staffing, opt
 4. Refresh the report to recalculate measures and visuals.
 5. Use the **Passenger Class** slicer to filter the dashboard view.
 
----
 
 ## Files included in this repo
 
@@ -109,8 +108,6 @@ These insights can help operations and customer service teams plan staffing, opt
 * `README.md` — this file
 * `LICENSE` — MIT license
 
----
-
 ## Next steps (suggested improvements)
 
 * Add a **Weather Severity** score (light/moderate/severe) to quantify impact more precisely.
@@ -118,12 +115,9 @@ These insights can help operations and customer service teams plan staffing, opt
 * Build a predictive model to estimate delay probability given weather forecast and route characteristics.
 * Publish to Power BI Service and enable scheduled refresh to keep data up to date.
 
----
-
 ## A note from me
 
 This dashboard is my end-to-end Power BI implementation: data prep, modeling, DAX, visual build, and storytelling. Replace the author/contact fields above with your details, and feel free to edit any visuals or DAX snippets to match your dataset column names.
 
----
 
 **Made with Power BI** ✈️
